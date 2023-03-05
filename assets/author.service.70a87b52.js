@@ -1,0 +1,1 @@
+import{j as a}from"./index.909124cc.js";class r{constructor(t="https://bookstore-3c8x.onrender.com/api/authors"){this.api=a(t)}async getAllAuthors(){return(await this.api.get("/")).data}async getAnAuthor(t){return(await this.api.get(`/${t}`)).data}async addAnAuthor(t){return(await this.api.post("/",t)).data}}const s=new r;export{s as A};

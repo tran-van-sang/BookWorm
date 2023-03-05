@@ -1,0 +1,1 @@
+import{j as e}from"./index.909124cc.js";class a{constructor(r="https://bookstore-3c8x.onrender.com/api/order"){this.api=e(r)}async addOrder(r){return(await this.api.post("/",r)).data}async confirmOrder(r,t){return(await this.api.put(`/confirmorder/${r}`,t)).data}}const s=new a;export{s as O};
